@@ -1,0 +1,135 @@
+ :root {
+            --primary-color: rgb(37 99 235); /* Indigo */
+            --primary-light: #eef2ff;
+            --text-dark: #1f2937;
+            --text-medium: #4b5563;
+            --text-light: #6b7280;
+            --border-color: #e5e7eb;
+            --background-light: #f9fafb;
+            --white: #ffffff;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-light);
+            margin: 0;
+            color: var(--text-medium);
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .container {
+            max-width: 80rem; /* 1280px */
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .navbar-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 5rem; /* 80px */
+        }
+
+        /* Logo Section */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            height: 80px; /* Controls the height of the logo */
+            width: auto;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            flex-grow: 1; /* Allow links to take up available space */
+            justify-content: center; /* Center the links */
+            align-items: center; /* Vertically center the links */
+            gap: 2rem;
+            margin-left: 2rem; /* Add some space from the logo */
+        }
+
+        .nav-link {
+            position: relative;
+            padding-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-light);
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--text-dark);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .nav-link.active::after,
+        .nav-link:hover::after {
+            transform: scaleX(1);
+        }
+
+        .nav-link.active {
+            color: var(--primary-color);
+        }
+        
+        /* Dummy Content Styles */
+        .page-content-wrapper {
+             max-width: 80rem;
+             margin-left: auto;
+             margin-right: auto;
+             padding: 2.5rem 2rem;
+        }
+        
+        .page-content {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            height: 200vh;
+        }
+        
+        .page-content h1 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        
+        .page-content p {
+            margin-top: 1rem;
+            color: var(--text-medium);
+        }
