@@ -1,0 +1,229 @@
+var facultyLink = document.getElementById('nav-faculty-link');
+var courseLink = document.getElementById('nav-course-link');
+var newsEventsLink = document.getElementById('nav-news&events-link');
+var careerLink = document.getElementById('nav-career-link');
+var aminitiesLink = document.getElementById('nav-aminities-link');
+var aboutLink = document.getElementById('nav-about-link');
+var contactLink = document.getElementById('nav-contact-link');
+var homeLink = document.getElementById('nav-home-link');
+
+var mainContainer = document.getElementById('main-container');
+var currentPage = homeLink;
+ function setActiveLink(activeLink) {
+       currentPage.classList.remove('active');  
+       activeLink.classList.add('active');    
+        currentPage = activeLink;
+    }
+
+
+facultyLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    if (currentPage !==  facultyLink) {
+        mainContainer.innerHTML = `<!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Faculty</h1>
+            <p class="page-subtitle">Meet the dedicated team of educators and staff who are shaping the future of technology at our department.</p>
+        </div>
+    </header>
+
+    <!-- Main Content: Faculty Details -->
+    <main class="faculty-grid-section">
+        <div class="container">
+            <!-- HOD Row -->
+            <div class="faculty-row">
+                <div class="faculty-card">
+                    <img src="images/hod.jpg" alt="Head of Department" class="faculty-image">
+                    <h3 class="faculty-name">Dr.Vijay Anand K S</h3>
+                    <p class="faculty-title">Head of Department</p>
+                </div>
+            </div>
+
+            <!-- Assistant Professors Row -->
+            <div class="faculty-row">
+                <div class="faculty-card">
+                    <img src="https://placehold.co/150x150/e0e0e0/cccccc?text=Faculty" alt="Faculty Member" class="faculty-image">
+                    <h3 class="faculty-name">Prof. Name Here</h3>
+                    <p class="faculty-title">Assistant Professor</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="https://placehold.co/150x150/e0e0e0/cccccc?text=Faculty" alt="Faculty Member" class="faculty-image">
+                    <h3 class="faculty-name">Prof. Name Here</h3>
+                    <p class="faculty-title">Assistant Professor</p>
+                </div>
+                <div class="faculty-card">
+                    <img src="https://placehold.co/150x150/e0e0e0/cccccc?text=Faculty" alt="Faculty Member" class="faculty-image">
+                    <h3 class="faculty-name">Prof. Name Here</h3>
+                    <p class="faculty-title">Assistant Professor</p>
+                </div>
+            </div>
+
+            <!-- Lecturers Row -->
+            <div class="faculty-row">
+                 <div class="faculty-card">
+                    <img src="https://placehold.co/150x150/e0e0e0/cccccc?text=Faculty" alt="Faculty Member" class="faculty-image">
+                    <h3 class="faculty-name">Ms. Name Here</h3>
+                    <p class="faculty-title">Lecturer</p>
+                </div>
+                 <div class="faculty-card">
+                    <img src="https://placehold.co/150x150/e0e0e0/cccccc?text=Faculty" alt="Faculty Member" class="faculty-image">
+                    <h3 class="faculty-name">Ms. Name Here</h3>
+                    <p class="faculty-title">Lecturer</p>
+                </div>
+                 <div class="faculty-card">
+                    <img src="https://placehold.co/150x150/e0e0e0/cccccc?text=Faculty" alt="Faculty Member" class="faculty-image">
+                    <h3 class="faculty-name">Mr. Name Here</h3>
+                    <p class="faculty-title">Lecturer</p>
+                </div>
+            </div>
+
+            <!-- Lab Staff Row -->
+            <div class="faculty-row">
+                <div class="faculty-card">
+                    <img src="https://placehold.co/150x150/e0e0e0/cccccc?text=Staff" alt="Lab Staff" class="faculty-image">
+                    <h3 class="faculty-name">Mr. Name Here</h3>
+                    <p class="faculty-title">Lab Staff</p>
+                </div>
+                 <div class="faculty-card">
+                    <img src="https://placehold.co/150x150/e0e0e0/cccccc?text=Staff" alt="Lab Staff" class="faculty-image">
+                    <h3 class="faculty-name">Mrs. Name Here</h3>
+                    <p class="faculty-title">Lab Staff</p>
+                </div>
+                 <div class="faculty-card">
+                    <img src="https://placehold.co/150x150/e0e0e0/cccccc?text=Staff" alt="Lab Staff" class="faculty-image">
+                    <h3 class="faculty-name">Mrs. Name Here</h3>
+                    <p class="faculty-title">Lab Staff</p>
+                </div>
+            </div>
+        </div>
+    </main>`;
+       
+        setActiveLink(facultyLink);
+        
+    }
+});
+
+
+homeLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    if (currentPage !== homeLink) {
+        mainContainer.innerHTML = ` <section class="banner">
+            <h1 class="banner-heading">Welcome to the Department of IT</h1>
+            <p class="banner-tagline">Fostering Innovation and Excellence in Information Technology.</p>
+            <div class="banner-buttons">
+                <a href="#" class="btn btn-primary" >
+                    Explore Courses 
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                    </svg> -->
+                </a>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Message from HOD Section -->
+        <section class="hod-message-section">
+            <div class="container">
+                <h2 class="hod-message-section-heading">Message from the HOD</h2>
+                <div class="hod-message-content">
+                    <div class="hod-message-text">
+                        <p>"Welcome to Dept of Information Technology. Our department Strives to provide students with strong technical skills, innovation and research opportunities. We focus on developing professionals who can excel in the rapidly growing IT industry".</p>
+                    </div>
+                    <div class="hod-image-container">
+                        <img src="images/hod.jpg" alt="Head of Department" class="hod-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                            </svg>
+                        </div>
+                        <h3 class="stat-number">300+</h3>
+                        <p class="stat-label">Active Students</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                            </svg>
+                        </div>
+                        <h3 class="stat-number">15+</h3>
+                        <p class="stat-label">Faculties</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                            </svg>
+                        </div>
+                        <h3 class="stat-number">200+</h3>
+                        <p class="stat-label">Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/> <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                            </svg>
+                        </div>
+                        <h3 class="stat-number">100+</h3>
+                        <p class="stat-label">Placments</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Events Section -->
+        <section class="news-events-section">
+            <div class="container">
+                <h2 class="section-heading">News & Events</h2>
+                <p class="section-subheading">Stay updated with our latest announcements, events, and community achievements.</p>
+                <div class="news-grid">
+                    <!-- Card 1 -->
+                    <div class="news-card">
+                        <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Event+One" alt="News event image">
+                        <div class="card-content">
+                            <p class="card-date">September 10, 2025</p>
+                            <h3 class="card-title">MuLearn GECI ExeCom</h3>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="news-card">
+                        <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Event+Two" alt="News event image">
+                        <div class="card-content">
+                            <p class="card-date">August 22, 2025</p>
+                            <h3 class="card-title">Tech Fest Announcement</h3>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="news-card">
+                        <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Event+Three" alt="News event image">
+                        <div class="card-content">
+                            <p class="card-date">July 15, 2025</p>
+                            <h3 class="card-title">Workshop on AI/ML</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all-container">
+                    <a href="#" class="btn btn-primary news-events-btn">
+                        View All Updates
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>`;
+       
+        setActiveLink(homeLink);    
+    }
+});    

@@ -1,0 +1,90 @@
+ /* Faculty Page Specific Styles */
+        .page-header {
+            background-color: var(--primary-color);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .page-header .page-title {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+        
+        .page-header .page-subtitle {
+            color: var(--primary-light);
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .faculty-grid-section {
+            padding: 4rem 0;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            text-align: center;
+            max-width: 42rem;
+            margin: 0 auto 4rem;
+            color: var(--text-light);
+        }
+
+        .faculty-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .faculty-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .faculty-card {
+            background-color: var(--white);
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            padding: 2rem;
+            width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .faculty-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .faculty-image {
+            /* width: 150px; */
+            height: 150px;
+            border-radius: 50%;
+            object-fit: contain;
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--primary-light);
+        }
+
+        .faculty-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0 0 0.25rem;
+        }
+
+        .faculty-title {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
