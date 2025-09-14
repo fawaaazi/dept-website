@@ -7,6 +7,10 @@ var aboutLink = document.getElementById('nav-about-link');
 var contactLink = document.getElementById('nav-contact-link');
 var homeLink = document.getElementById('nav-home-link');
 
+var exploreCoursesBtn = document.getElementById('explore-course-btn');
+var learnMoreBtn = document.getElementById('learn-more-btn');
+var newsEventsBtn = document.getElementById('news-events-btn');
+
 var mainContainer = document.getElementById('main-container');
 var currentPage = homeLink;
  function setActiveLink(activeLink) {
@@ -15,6 +19,363 @@ var currentPage = homeLink;
         currentPage = activeLink;
     }
 
+
+
+
+
+   
+// here from above no errors
+
+
+function switchToNewsAndEventsPage(){
+     if (currentPage !== newsEventsLink) {
+      mainContainer.innerHTML = ` <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">News & Events</h1>
+            <p class="page-subtitle">Stay up-to-date with the latest happenings, workshops, and achievements from the Department of Information Technology.</p>
+        </div>
+    </header>
+
+    <!-- Main Content: Events -->
+    <main class="events-section">
+        <div class="container">
+            <!-- Upcoming Events Section -->
+            <section class="event-category">
+                <h2 class="category-title">Upcoming Events</h2>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <img src="https://placehold.co/400x250/4f46e5/ffffff?text=Workshop" alt="Event Image" class="event-image">
+                        <div class="event-content">
+                            <p class="event-date">October 25, 2025</p>
+                            <h3 class="event-title">AI & Machine Learning Workshop</h3>
+                            <p class="event-description">A hands-on workshop covering the fundamentals of AI and ML with practical examples.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="https://placehold.co/400x250/34d399/ffffff?text=Seminar" alt="Event Image" class="event-image">
+                        <div class="event-content">
+                            <p class="event-date">November 12, 2025</p>
+                            <h3 class="event-title">Cybersecurity Seminar</h3>
+                            <p class="event-description">Join industry experts to discuss the latest trends and threats in cybersecurity.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="https://placehold.co/400x250/f59e0b/ffffff?text=Contest" alt="Event Image" class="event-image">
+                        <div class="event-content">
+                            <p class="event-date">December 5, 2025</p>
+                            <h3 class="event-title">Annual Coding Contest</h3>
+                            <p class="event-description">Showcase your programming skills and compete for exciting prizes in our annual contest.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Past Events Section -->
+            <section class="event-category">
+                <h2 class="category-title">Past Events</h2>
+                <div class="events-grid">
+                     <div class="event-card">
+                        <img src="images/events/cprogramming-bootcamp.jpg" alt="Event Image" class="event-image">
+                        <div class="event-content">
+                            <p class="event-date">August 15, 2025</p>
+                            <h3 class="event-title">Innovate & Create Hackathon</h3>
+                            <p class="event-description">A 24-hour event where students collaborated to build innovative tech solutions.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="images/events/asso-inauguration.jpg" alt="Event Image" class="event-image">
+                        <div class="event-content">
+                            <p class="event-date">July 22, 2025</p>
+                            <h3 class="event-title">Guest Lecture on Cloud Computing</h3>
+                            <p class="event-description">An insightful session on the future of cloud technologies by a guest from AWS.</p>
+                        </div>
+                    </div>
+                     <div class="event-card">
+                        <img src="images/events/farewell-2025.jpg" alt="Event Image" class="event-image">
+                        <div class="event-content">
+                            <p class="event-date">June 10, 2025</p>
+                            <h3 class="event-title">Final Year Project Expo</h3>
+                            <p class="event-description">Our final year students presented their capstone projects to faculty and industry experts.</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="../images/events/futuro-expo.png" alt="Event Image" class="event-image">
+                        <div class="event-content">
+                            <p class="event-date">June 10, 2025</p>
+                            <h3 class="event-title">Final Year Project Expo</h3>
+                            <p class="event-description">Our final year students presented their capstone projects to faculty and industry experts.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>`;
+  
+        setActiveLink(newsEventsLink);    
+    }
+}
+
+function switchToAboutPage(){
+
+        if (currentPage !== aboutLink) {
+            mainContainer.innerHTML = `  <!-- Page Header -->
+        <header class="page-header">
+            <div class="container">
+                <h1 class="page-title">About Our Department</h1>
+                <p class="page-subtitle">Learn more about our history, our goals, and the values that drive us forward.</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- About Department Section -->
+                <section class="content-section">
+                    <div class="about-layout">
+                        <div class="about-text">
+                            <h2>Welcome to the Department of IT</h2>
+                            <p>
+                                Established in 2000, the Department of Information Technology at Government Engineering College, Idukki, is committed to excellence. Our highly qualified faculty are dedicated to nurturing students not just in academics but also in co-curricular and extra-curricular activities. We boast an advanced infrastructure with high-speed internet, modern classrooms, and state-of-the-art labs equipped with the latest software and development tools. We also conduct regular training programs to keep both students and staff updated with the latest technological trends.
+                            </p>
+                        </div>
+                        <div class="about-image-container">
+                            <img src="images/home-page-banner.png" alt="Department Building or Campus" class="about-image">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Vision Section -->
+            <section class="vision-section">
+                <div class="container">
+                    <div class="vision-content">
+                        <h2 class="section-title">Our Vision</h2>
+                        <p>
+                            "To be a centre of excellence in the field of Information Technology which nurtures young minds through technological adaptation, research, innovation and entrepreneurial skills complying to the needs of society and industry."
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="container">
+                <!-- Mission Section -->
+                <section class="content-section" style="margin-top: 4rem;">
+                    <h2 class="section-title">Our Mission</h2>
+                    <div class="mission-grid">
+                        <div class="mission-card">
+                            <div class="mission-number">01</div>
+                            <p>Imparting career-oriented professional education to students through effective delivery of the curriculum.</p>
+                        </div>
+                        <div class="mission-card">
+                            <div class="mission-number">02</div>
+                            <p>Establishing effective adaptation of cutting-edge technologies through industry collaborations and mentoring.</p>
+                        </div>
+                        <div class="mission-card">
+                            <div class="mission-number">03</div>
+                            <p>Empowering individuals to be socially responsible by inculcating critical thinking, innovation and ethical values.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>`;
+       
+        setActiveLink(aboutLink);    
+    }
+}
+
+
+function switchToCoursesPage() {
+
+    if (currentPage !== courseLink) { 
+        mainContainer.innerHTML = ` <!-- Page Header -->
+        <header class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Academic Programs</h1>
+                <p class="page-subtitle">Discover the comprehensive undergraduate and postgraduate programs we offer to shape the future of technology.</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <div class="courses-container">
+                    <!-- B.Tech Card -->
+                    <div class="course-card">
+                        <img src="https://placehold.co/600x300/4f46e5/ffffff?text=B.Tech+Program" alt="B.Tech Program" class="course-card-image">
+                        <div class="course-card-details">
+                            <h2>B.Tech in Information Technology</h2>
+                            <p>Our Bachelor of Technology (B.Tech) program in Information Technology is a comprehensive four-year undergraduate course designed to provide students with a robust foundation in computer science, software development, and networking. The curriculum is crafted to meet the evolving demands of the IT industry, blending theoretical knowledge with hands-on practical experience.</p>
+                            <ul class="course-highlights">
+                                <li>Strong foundation in programming, algorithms, and data structures.</li>
+                                <li>In-depth knowledge of database management and web technologies.</li>
+                                <li>Specialized training in areas like artificial intelligence and cybersecurity.</li>
+                                <li>Emphasis on project-based learning and industry internships.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- M.Tech Card -->
+                    <div class="course-card">
+                        <img src="https://placehold.co/600x300/1f2937/ffffff?text=M.Tech+Program" alt="M.Tech Program" class="course-card-image">
+                        <div class="course-card-details">
+                            <h2>M.Tech in Network Engineering</h2>
+                            <p>The Master of Technology (M.Tech) in Network Engineering is a two-year postgraduate program aimed at professionals and graduates seeking to specialize in the field of computer networks. This program covers advanced topics in network design, management, and security, preparing students to tackle complex challenges in modern networking infrastructure.</p>
+                            <ul class="course-highlights">
+                                <li>Advanced understanding of network protocols and architecture.</li>
+                                <li>Hands-on experience with modern network simulation tools.</li>
+                                <li>Focus on network security, wireless networks, and cloud computing.</li>
+                                <li>Opportunities for cutting-edge research and dissertation work.</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </main>`;
+       
+        setActiveLink(courseLink);    
+    }
+}
+
+
+
+
+
+
+homeLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    if (currentPage !== homeLink) {
+        mainContainer.innerHTML = ` <section class="banner">
+            <h1 class="banner-heading">Welcome to the Department of IT</h1>
+            <p class="banner-tagline">Fostering Innovation and Excellence in Information Technology.</p>
+            <div class="banner-buttons">
+                <a href="#" class="btn btn-primary" >
+                    Explore Courses 
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                    </svg> -->
+                </a>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Message from HOD Section -->
+        <section class="hod-message-section">
+            <div class="container">
+                <h2 class="hod-message-section-heading">Message from the HOD</h2>
+                <div class="hod-message-content">
+                    <div class="hod-message-text">
+                        <p>"Department of information Technology is started in the year 2000 with under graduate B.Tech course and post graduate programme M.Tech with specialization in Network Engineering started in the year 2013. Department functions with eminent and dedicated faculty members and supporting staffs and equipped with established lab facility and smart class rooms. Our Department focuses towards outcome based education which emphasis on the placement by providing quality education. Various training programmes, remedial classes, poster presentations and GATE coaching classes are organized throughout the year. Our faculty members and students are deeply engaged in research work and five of our student projects got approval for funding in this academic year.".</p>
+                    </div>
+                    <div class="hod-image-container">
+                        <img src="images/faculty/hod.jpg" alt="Head of Department" class="hod-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                            </svg>
+                        </div>
+                        <h3 class="stat-number">300+</h3>
+                        <p class="stat-label">Active Students</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                            </svg>
+                        </div>
+                        <h3 class="stat-number">15+</h3>
+                        <p class="stat-label">Faculties</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                            </svg>
+                        </div>
+                        <h3 class="stat-number">200+</h3>
+                        <p class="stat-label">Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/> <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                            </svg>
+                        </div>
+                        <h3 class="stat-number">100+</h3>
+                        <p class="stat-label">Placments</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Events Section -->
+        <section class="news-events-section">
+            <div class="container">
+                <h2 class="section-heading">News & Events</h2>
+                <p class="section-subheading">Stay updated with our latest announcements, events, and community achievements.</p>
+                <div class="news-grid">
+                    <!-- Card 1 -->
+                    <div class="news-card">
+                       <img src="images/events/asso-inauguration.jpg" alt="News event image">
+                        <div class="card-content">
+                            <p class="card-date">February 29, 2024</p>
+                            <h3 class="card-title">IT Association Inauguration</h3>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="news-card">
+                       <img src="images/events/futuro-expo.png" alt="News event image">
+                        <div class="card-content">
+                            <p class="card-date">August 22, 2025</p>
+                            <h3 class="card-title">Project Expo 2025</h3>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="news-card">
+                       <img src="images/events/cprogramming-bootcamp.jpg" alt="News event image">
+                        <div class="card-content">
+                            <p class="card-date">April 29, 2024</p>
+                            <h3 class="card-title">C Programming Bootcamp</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all-container">
+                    <a href="#" class="btn btn-primary news-events-btn">
+                        View All Updates
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>`;
+       
+        setActiveLink(homeLink);    
+    }
+}); 
+
+
+courseLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    switchToCoursesPage();
+});
+
+newsEventsLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    switchToNewsAndEventsPage();
+   
+});
 
 facultyLink.addEventListener('click', function(event) {
     event.preventDefault();
@@ -86,211 +447,6 @@ facultyLink.addEventListener('click', function(event) {
     }
 });
 
-
-homeLink.addEventListener('click', function(event) {
-    event.preventDefault();
-    if (currentPage !== homeLink) {
-        mainContainer.innerHTML = ` <section class="banner">
-            <h1 class="banner-heading">Welcome to the Department of IT</h1>
-            <p class="banner-tagline">Fostering Innovation and Excellence in Information Technology.</p>
-            <div class="banner-buttons">
-                <a href="#" class="btn btn-primary" >
-                    Explore Courses 
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                    </svg> -->
-                </a>
-                <a href="#" class="btn btn-secondary">Learn More</a>
-            </div>
-        </section>
-
-        <!-- Message from HOD Section -->
-        <section class="hod-message-section">
-            <div class="container">
-                <h2 class="hod-message-section-heading">Message from the HOD</h2>
-                <div class="hod-message-content">
-                    <div class="hod-message-text">
-                        <p>"Department of information Technology is started in the year 2000 with under graduate B.Tech course and post graduate programme M.Tech with specialization in Network Engineering started in the year 2013. Department functions with eminent and dedicated faculty members and supporting staffs and equipped with established lab facility and smart class rooms. Our Department focuses towards outcome based education which emphasis on the placement by providing quality education. Various training programmes, remedial classes, poster presentations and GATE coaching classes are organized throughout the year. Our faculty members and students are deeply engaged in research work and five of our student projects got approval for funding in this academic year.".</p>
-                    </div>
-                    <div class="hod-image-container">
-                        <img src="images/hod.jpg" alt="Head of Department" class="hod-image">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    
-        <!-- Stats Section -->
-        <section class="stats-section">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                            </svg>
-                        </div>
-                        <h3 class="stat-number">300+</h3>
-                        <p class="stat-label">Active Students</p>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                            </svg>
-                        </div>
-                        <h3 class="stat-number">15+</h3>
-                        <p class="stat-label">Faculties</p>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                                <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
-                            </svg>
-                        </div>
-                        <h3 class="stat-number">200+</h3>
-                        <p class="stat-label">Projects</p>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                                <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/> <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-                            </svg>
-                        </div>
-                        <h3 class="stat-number">100+</h3>
-                        <p class="stat-label">Placments</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- News & Events Section -->
-        <section class="news-events-section">
-            <div class="container">
-                <h2 class="section-heading">News & Events</h2>
-                <p class="section-subheading">Stay updated with our latest announcements, events, and community achievements.</p>
-                <div class="news-grid">
-                    <!-- Card 1 -->
-                    <div class="news-card">
-                        <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Event+One" alt="News event image">
-                        <div class="card-content">
-                            <p class="card-date">September 10, 2025</p>
-                            <h3 class="card-title">MuLearn GECI ExeCom</h3>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="news-card">
-                        <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Event+Two" alt="News event image">
-                        <div class="card-content">
-                            <p class="card-date">August 22, 2025</p>
-                            <h3 class="card-title">Tech Fest Announcement</h3>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="news-card">
-                        <img src="https://placehold.co/600x400/e2e8f0/4a5568?text=Event+Three" alt="News event image">
-                        <div class="card-content">
-                            <p class="card-date">July 15, 2025</p>
-                            <h3 class="card-title">Workshop on AI/ML</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="view-all-container">
-                    <a href="#" class="btn btn-primary news-events-btn">
-                        View All Updates
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </div>`;
-       
-        setActiveLink(homeLink);    
-    }
-});    
-
-newsEventsLink.addEventListener('click', function(event) {
-    event.preventDefault();
-    if (currentPage !== newsEventsLink) {
-      mainContainer.innerHTML = ` <header class="page-header">
-        <div class="container">
-            <h1 class="page-title">News & Events</h1>
-            <p class="page-subtitle">Stay up-to-date with the latest happenings, workshops, and achievements from the Department of Information Technology.</p>
-        </div>
-    </header>
-
-    <!-- Main Content: Events -->
-    <main class="events-section">
-        <div class="container">
-            <!-- Upcoming Events Section -->
-            <section class="event-category">
-                <h2 class="category-title">Upcoming Events</h2>
-                <div class="events-grid">
-                    <div class="event-card">
-                        <img src="https://placehold.co/400x250/4f46e5/ffffff?text=Workshop" alt="Event Image" class="event-image">
-                        <div class="event-content">
-                            <p class="event-date">October 25, 2025</p>
-                            <h3 class="event-title">AI & Machine Learning Workshop</h3>
-                            <p class="event-description">A hands-on workshop covering the fundamentals of AI and ML with practical examples.</p>
-                        </div>
-                    </div>
-                    <div class="event-card">
-                        <img src="https://placehold.co/400x250/34d399/ffffff?text=Seminar" alt="Event Image" class="event-image">
-                        <div class="event-content">
-                            <p class="event-date">November 12, 2025</p>
-                            <h3 class="event-title">Cybersecurity Seminar</h3>
-                            <p class="event-description">Join industry experts to discuss the latest trends and threats in cybersecurity.</p>
-                        </div>
-                    </div>
-                    <div class="event-card">
-                        <img src="https://placehold.co/400x250/f59e0b/ffffff?text=Contest" alt="Event Image" class="event-image">
-                        <div class="event-content">
-                            <p class="event-date">December 5, 2025</p>
-                            <h3 class="event-title">Annual Coding Contest</h3>
-                            <p class="event-description">Showcase your programming skills and compete for exciting prizes in our annual contest.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Past Events Section -->
-            <section class="event-category">
-                <h2 class="category-title">Past Events</h2>
-                <div class="events-grid">
-                     <div class="event-card">
-                        <img src="images/events/cprogramming-bootcamp.jpg" alt="Event Image" class="event-image">
-                        <div class="event-content">
-                            <p class="event-date">August 15, 2025</p>
-                            <h3 class="event-title">Innovate & Create Hackathon</h3>
-                            <p class="event-description">A 24-hour event where students collaborated to build innovative tech solutions.</p>
-                        </div>
-                    </div>
-                    <div class="event-card">
-                        <img src="images/events/asso-inauguration.jpg" alt="Event Image" class="event-image">
-                        <div class="event-content">
-                            <p class="event-date">July 22, 2025</p>
-                            <h3 class="event-title">Guest Lecture on Cloud Computing</h3>
-                            <p class="event-description">An insightful session on the future of cloud technologies by a guest from AWS.</p>
-                        </div>
-                    </div>
-                     <div class="event-card">
-                        <img src="images/events/farewell-2025.jpg" alt="Event Image" class="event-image">
-                        <div class="event-content">
-                            <p class="event-date">June 10, 2025</p>
-                            <h3 class="event-title">Final Year Project Expo</h3>
-                            <p class="event-description">Our final year students presented their capstone projects to faculty and industry experts.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>`;
-  
-        setActiveLink(newsEventsLink);    
-    }
-});
 
 careerLink.addEventListener('click', function(event) {
     event.preventDefault();
@@ -386,74 +542,12 @@ careerLink.addEventListener('click', function(event) {
     }
 });
 
+
 aboutLink.addEventListener('click', function(event) {
     event.preventDefault();
-    if (currentPage !== aboutLink) {
-            mainContainer.innerHTML = `  <!-- Page Header -->
-        <header class="page-header">
-            <div class="container">
-                <h1 class="page-title">About Our Department</h1>
-                <p class="page-subtitle">Learn more about our history, our goals, and the values that drive us forward.</p>
-            </div>
-        </header>
+    switchToAboutPage();
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <div class="container">
-                <!-- About Department Section -->
-                <section class="content-section">
-                    <div class="about-layout">
-                        <div class="about-text">
-                            <h2>Welcome to the Department of IT</h2>
-                            <p>
-                                Established in 2000, the Department of Information Technology at Government Engineering College, Idukki, is committed to excellence. Our highly qualified faculty are dedicated to nurturing students not just in academics but also in co-curricular and extra-curricular activities. We boast an advanced infrastructure with high-speed internet, modern classrooms, and state-of-the-art labs equipped with the latest software and development tools. We also conduct regular training programs to keep both students and staff updated with the latest technological trends.
-                            </p>
-                        </div>
-                        <div class="about-image-container">
-                            <img src="images/home-page-banner.png" alt="Department Building or Campus" class="about-image">
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Vision Section -->
-            <section class="vision-section">
-                <div class="container">
-                    <div class="vision-content">
-                        <h2 class="section-title">Our Vision</h2>
-                        <p>
-                            "To be a centre of excellence in the field of Information Technology which nurtures young minds through technological adaptation, research, innovation and entrepreneurial skills complying to the needs of society and industry."
-                        </p>
-                    </div>
-                </div>
-            </section>
-            
-            <div class="container">
-                <!-- Mission Section -->
-                <section class="content-section" style="margin-top: 4rem;">
-                    <h2 class="section-title">Our Mission</h2>
-                    <div class="mission-grid">
-                        <div class="mission-card">
-                            <div class="mission-number">01</div>
-                            <p>Imparting career-oriented professional education to students through effective delivery of the curriculum.</p>
-                        </div>
-                        <div class="mission-card">
-                            <div class="mission-number">02</div>
-                            <p>Establishing effective adaptation of cutting-edge technologies through industry collaborations and mentoring.</p>
-                        </div>
-                        <div class="mission-card">
-                            <div class="mission-number">03</div>
-                            <p>Empowering individuals to be socially responsible by inculcating critical thinking, innovation and ethical values.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>`;
-       
-        setActiveLink(aboutLink);    
-    }
 });
-
 
 aminitiesLink.addEventListener('click', function(event) {  
     event.preventDefault();
@@ -731,4 +825,27 @@ contactLink.addEventListener('click', function(event) {
 
         setActiveLink(contactLink);    
     }
+});
+
+
+
+
+
+
+
+
+
+exploreCoursesBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    switchToCoursesPage();
+});
+
+learnMoreBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    switchToAboutPage();
+});
+
+newsEventsBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    switchToNewsAndEventsPage();
 });

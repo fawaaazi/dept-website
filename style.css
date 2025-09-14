@@ -295,7 +295,7 @@
         .news-card {
             background-color: var(--white);
             border-radius: 0.75rem; /* 12px */
-            box-shadow: var(--shadow-md);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -333,7 +333,7 @@
             text-align: center;
             margin-top: 3rem;
         }
-        .news-events-btn{
+        #news-events-btn{
             background-color: var(--primary-color);
             color: var(--white);
         }
