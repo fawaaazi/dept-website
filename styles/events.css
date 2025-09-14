@@ -1,0 +1,87 @@
+/* Page Header */
+        .page-header {
+            background-color: var(--primary-color);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .page-header .page-title {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            font-size: 2.25rem;
+            font-weight: 700;
+        }
+        
+        .page-header .page-subtitle {
+            color: var(--primary-light);
+            margin: 0 auto;
+            opacity: 0.9;
+            max-width: 42rem;
+        }
+
+        /* Events Section */
+        .events-section {
+            padding: 4rem 0;
+        }
+
+        .event-category {
+            margin-bottom: 4rem;
+        }
+
+        .category-title {
+            font-size: 1.875rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .event-card {
+            background-color: var(--white);
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .event-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .event-content {
+            padding: 1.5rem;
+        }
+        
+        .event-date {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .event-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0 0 0.5rem;
+        }
+
+        .event-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+

@@ -1,0 +1,87 @@
+ /* Page Header */
+        .page-header {
+            background-color: var(--primary-color);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .page-header .page-title {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            font-size: 2.25rem;
+            font-weight: 700;
+        }
+        
+        .page-header .page-subtitle {
+            color: var(--primary-light);
+            margin: 0 auto;
+            opacity: 0.9;
+            max-width: 42rem;
+        }
+
+        /* Main Content Section */
+        .main-content {
+            padding: 4rem 0;
+        }
+        
+        /* Amenity Section */
+        .amenity-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+        
+        .amenity-section:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Alternating layout */
+        .amenity-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .amenity-text, .amenity-image-container {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .amenity-text h2 {
+            font-size: 1.875rem;
+            color: var(--text-dark);
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .amenity-text p {
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .amenity-features {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .amenity-features li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+        
+        .amenity-features li::before {
+            content: '✓';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: 600;
+        }
+
+        .amenity-image {
+            height: 450px;
+            width: 100%;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow-lg);
+        }

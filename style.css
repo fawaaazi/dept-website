@@ -109,7 +109,7 @@
         /* Banner Section Styles */
         .banner {
             /* You can replace this URL with your desired background image */
-            background-image: linear-gradient(rgba(25, 43, 131, 0.4), rgba(25, 43, 131, 0.4)), url('images/Generated\ Image\ September\ 14\,\ 2025\ -\ 11_58AM.png');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('images/home-page-banner.png');
             /* background-color: var(--primary-color); */
             background-size: cover;
             background-position: center;
@@ -185,7 +185,7 @@
         
         .hod-message-section-heading {
             text-align: center;
-            font-size: 3rem; /* 48px */
+            font-size: 1.875rem; /* 48px */
             font-weight: 700;
             color: var(--text-dark);
             margin-bottom: 2.5rem; /* 40px */
@@ -274,10 +274,10 @@
             text-align: center;
         }
          .news-events-section .section-heading {
-            font-size: 3rem; /* 48px */
+            font-size: 1.875rem; /* 48px */
             font-weight: 700;
             color: var(--text-dark);
-            margin-bottom: 1rem;    
+            margin-bottom: 3rem;    
         }
         .section-subheading {
             text-align: center;
