@@ -260,7 +260,7 @@ newsEventsLink.addEventListener('click', function(event) {
                 <h2 class="category-title">Past Events</h2>
                 <div class="events-grid">
                      <div class="event-card">
-                        <img src="../images/events/cprogramming-bootcamp.jpg" alt="Event Image" class="event-image">
+                        <img src="images/events/cprogramming-bootcamp.jpg" alt="Event Image" class="event-image">
                         <div class="event-content">
                             <p class="event-date">August 15, 2025</p>
                             <h3 class="event-title">Innovate & Create Hackathon</h3>
@@ -268,7 +268,7 @@ newsEventsLink.addEventListener('click', function(event) {
                         </div>
                     </div>
                     <div class="event-card">
-                        <img src="../images/events/asso-inauguration.jpg" alt="Event Image" class="event-image">
+                        <img src="images/events/asso-inauguration.jpg" alt="Event Image" class="event-image">
                         <div class="event-content">
                             <p class="event-date">July 22, 2025</p>
                             <h3 class="event-title">Guest Lecture on Cloud Computing</h3>
@@ -276,7 +276,7 @@ newsEventsLink.addEventListener('click', function(event) {
                         </div>
                     </div>
                      <div class="event-card">
-                        <img src="../images/events/farewell-2025.jpg" alt="Event Image" class="event-image">
+                        <img src="images/events/farewell-2025.jpg" alt="Event Image" class="event-image">
                         <div class="event-content">
                             <p class="event-date">June 10, 2025</p>
                             <h3 class="event-title">Final Year Project Expo</h3>
@@ -410,7 +410,7 @@ aboutLink.addEventListener('click', function(event) {
                             </p>
                         </div>
                         <div class="about-image-container">
-                            <img src="../images/home-page-banner.png" alt="Department Building or Campus" class="about-image">
+                            <img src="images/home-page-banner.png" alt="Department Building or Campus" class="about-image">
                         </div>
                     </div>
                 </section>
@@ -497,7 +497,7 @@ aminitiesLink.addEventListener('click', function(event) {
                         </ul>
                     </div>
                     <div class="amenity-image-container">
-                          <img src="../images/aminities/software lab.png" alt="Software Lab" class="amenity-image">
+                          <img src="images/aminities/software lab.png" alt="Software Lab" class="amenity-image">
                     </div>
                 </section>
                 
@@ -561,7 +561,7 @@ aminitiesLink.addEventListener('click', function(event) {
                         </ul>
                     </div>
                     <div class="amenity-image-container">
-                        <img src="../images/aminities/network-lab.png" alt="Network Lab" class="amenity-image">
+                        <img src="images/aminities/network-lab.png" alt="Network Lab" class="amenity-image">
                     </div>
                 </section>
                 
@@ -611,7 +611,7 @@ aboutLink.addEventListener('click', function(event) {
                             </p>
                         </div>
                         <div class="about-image-container">
-                            <img src="../images/home-page-banner.png" alt="Department Building or Campus" class="about-image">
+                            <img src="images/home-page-banner.png" alt="Department Building or Campus" class="about-image">
                         </div>
                     </div>
                 </section>
