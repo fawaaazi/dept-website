@@ -482,7 +482,7 @@ careerLink.addEventListener('click', function(event) {
                 <h2 class="section-title">Placement Highlights</h2>
                 <div class="placements-grid">
                     <div class="student-card">
-                       <img src="/images/placements/abhirami.png" alt="Student Photo" class="student-image">
+                       <img src="images/placements/abhirami.png" alt="Student Photo" class="student-image">
                         <h3 class="student-name">Abhirami</h3>
                         <p class="placement-company">Talrop</p>
                         <span class="placement-salary">10 LPA</span>
