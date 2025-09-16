@@ -99,7 +99,7 @@ function switchToNewsAndEventsPage(){
                         </div>
                     </div>
                     <div class="event-card">
-                        <img src="../images/events/futuro-expo.png" alt="Event Image" class="event-image">
+                        <img src="images/events/futuro-expo.png" alt="Event Image" class="event-image">
                         <div class="event-content">
                             <p class="event-date">June 10, 2025</p>
                             <h3 class="event-title">Final Year Project Expo</h3>
