@@ -44,27 +44,11 @@ function switchToNewsAndEventsPage(){
                 <h2 class="category-title">Upcoming Events</h2>
                 <div class="events-grid">
                     <div class="event-card">
-                        <img src="https://placehold.co/400x250/4f46e5/ffffff?text=Workshop" alt="Event Image" class="event-image">
+                        <img src="images/events/freshers.jpg" alt="Event Image" class="event-image">
                         <div class="event-content">
-                            <p class="event-date">October 25, 2025</p>
-                            <h3 class="event-title">AI & Machine Learning Workshop</h3>
-                            <p class="event-description">A hands-on workshop covering the fundamentals of AI and ML with practical examples.</p>
-                        </div>
-                    </div>
-                    <div class="event-card">
-                        <img src="https://placehold.co/400x250/34d399/ffffff?text=Seminar" alt="Event Image" class="event-image">
-                        <div class="event-content">
-                            <p class="event-date">November 12, 2025</p>
-                            <h3 class="event-title">Cybersecurity Seminar</h3>
-                            <p class="event-description">Join industry experts to discuss the latest trends and threats in cybersecurity.</p>
-                        </div>
-                    </div>
-                    <div class="event-card">
-                        <img src="https://placehold.co/400x250/f59e0b/ffffff?text=Contest" alt="Event Image" class="event-image">
-                        <div class="event-content">
-                            <p class="event-date">December 5, 2025</p>
-                            <h3 class="event-title">Annual Coding Contest</h3>
-                            <p class="event-description">Showcase your programming skills and compete for exciting prizes in our annual contest.</p>
+                            <p class="event-date">September 17, 2025</p>
+                            <h3 class="event-title">Department Freshers</h3>
+                            <p class="event-description">Join Our Department Freshers Where Students Showcase Their Activities.</p>
                         </div>
                     </div>
                 </div>
@@ -78,16 +62,16 @@ function switchToNewsAndEventsPage(){
                         <img src="images/events/cprogramming-bootcamp.jpg" alt="Event Image" class="event-image">
                         <div class="event-content">
                             <p class="event-date">August 15, 2025</p>
-                            <h3 class="event-title">Innovate & Create Hackathon</h3>
-                            <p class="event-description">A 24-hour event where students collaborated to build innovative tech solutions.</p>
+                            <h3 class="event-title">C Programming Bootcamp</h3>
+                            <p class="event-description">A 3-days event where students collaborated to learn programming language.</p>
                         </div>
                     </div>
                     <div class="event-card">
                         <img src="images/events/asso-inauguration.jpg" alt="Event Image" class="event-image">
                         <div class="event-content">
                             <p class="event-date">July 22, 2025</p>
-                            <h3 class="event-title">Guest Lecture on Cloud Computing</h3>
-                            <p class="event-description">An insightful session on the future of cloud technologies by a guest from AWS.</p>
+                            <h3 class="event-title">Department Association Inuaguration</h3>
+                            <p class="event-description">Department Association inuaguration</p>
                         </div>
                     </div>
                      <div class="event-card">
