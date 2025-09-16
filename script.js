@@ -485,37 +485,37 @@ careerLink.addEventListener('click', function(event) {
                        <img src="/images/placements/abhirami.png" alt="Student Photo" class="student-image">
                         <h3 class="student-name">Abhirami</h3>
                         <p class="placement-company">Talrop</p>
-                        <span class="placement-salary">5 LPA</span>
+                        <span class="placement-salary">10 LPA</span>
                     </div>
                     <div class="student-card">
                         <img src="images/placements/gokul_rmbg.png" alt="Student Photo" class="student-image">
                         <h3 class="student-name">Gokul HV</h3>
                         <p class="placement-company">Cognizant</p>
-                         <span class="placement-salary">5 LPA</span>
+                         <span class="placement-salary">7 LPA</span>
                     </div>
                     <div class="student-card">
                         <img src="images/placements/adhithya_rmbg.png" alt="Student Photo" class="student-image">
                         <h3 class="student-name">Adhithya SS</h3>
                         <p class="placement-company">Infosys</p>
-                         <span class="placement-salary">10 LPA</span>
+                         <span class="placement-salary">7 LPA</span>
                     </div>
                      <div class="student-card">
                         <img src="images/placements/anjaly.png" alt="Student Photo" class="student-image">
                         <h3 class="student-name">Anjaly Babu</h3>
                         <p class="placement-company">Talrop</p>
-                         <span class="placement-salary">10 LPA</span>
+                         <span class="placement-salary">5 LPA</span>
                     </div>
                      <div class="student-card">
                         <img src="images/placements/biswas.png" alt="Student Photo" class="student-image">
                         <h3 class="student-name">Biswas Sekhar</h3>
                         <p class="placement-company">Talrop</p>
-                         <span class="placement-salary">10 LPA</span>
+                         <span class="placement-salary">5 LPA</span>
                     </div>
                      <div class="student-card">
                         <img src="images/placements/vishnu priya.jpg" alt="Student Photo" class="student-image">
                         <h3 class="student-name">Vishnu Priya Salin</h3>
                         <p class="placement-company">Talrop</p>
-                         <span class="placement-salary">10 LPA</span>
+                         <span class="placement-salary">5 LPA</span>
                     </div>
                 </div>
             </section>
