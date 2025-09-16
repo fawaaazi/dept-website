@@ -201,7 +201,7 @@ function switchToCoursesPage() {
                 <div class="courses-container">
                     <!-- B.Tech Card -->
                     <div class="course-card">
-                        <img src="https://placehold.co/600x300/4f46e5/ffffff?text=B.Tech+Program" alt="B.Tech Program" class="course-card-image">
+                        <img src="images/courses/btech.png" alt="B.Tech Program" class="course-card-image">
                         <div class="course-card-details">
                             <h2>B.Tech in Information Technology</h2>
                             <p>Our Bachelor of Technology (B.Tech) program in Information Technology is a comprehensive four-year undergraduate course designed to provide students with a robust foundation in computer science, software development, and networking. The curriculum is crafted to meet the evolving demands of the IT industry, blending theoretical knowledge with hands-on practical experience.</p>
@@ -216,7 +216,7 @@ function switchToCoursesPage() {
                     
                     <!-- M.Tech Card -->
                     <div class="course-card">
-                        <img src="https://placehold.co/600x300/1f2937/ffffff?text=M.Tech+Program" alt="M.Tech Program" class="course-card-image">
+                        <img src="images/courses/mtech.png" alt="M.Tech Program" class="course-card-image">
                         <div class="course-card-details">
                             <h2>M.Tech in Network Engineering</h2>
                             <p>The Master of Technology (M.Tech) in Network Engineering is a two-year postgraduate program aimed at professionals and graduates seeking to specialize in the field of computer networks. This program covers advanced topics in network design, management, and security, preparing students to tackle complex challenges in modern networking infrastructure.</p>
@@ -498,40 +498,40 @@ careerLink.addEventListener('click', function(event) {
                 <h2 class="section-title">Placement Highlights</h2>
                 <div class="placements-grid">
                     <div class="student-card">
-                        <img src="https://placehold.co/120x120/e0e0e0/cccccc?text=Student" alt="Student Photo" class="student-image">
-                        <h3 class="student-name">John Doe</h3>
-                        <p class="placement-company">at Google</p>
-                        <span class="placement-salary">25 LPA</span>
+                       <img src="/images/placements/abhirami.png" alt="Student Photo" class="student-image">
+                        <h3 class="student-name">Abhirami</h3>
+                        <p class="placement-company">Talrop</p>
+                        <span class="placement-salary">5 LPA</span>
                     </div>
                     <div class="student-card">
-                        <img src="https://placehold.co/120x120/e0e0e0/cccccc?text=Student" alt="Student Photo" class="student-image">
-                        <h3 class="student-name">Jane Smith</h3>
-                        <p class="placement-company">at Microsoft</p>
-                         <span class="placement-salary">22 LPA</span>
+                        <img src="images/placements/gokul_rmbg.png" alt="Student Photo" class="student-image">
+                        <h3 class="student-name">Gokul HV</h3>
+                        <p class="placement-company">Cognizant</p>
+                         <span class="placement-salary">5 LPA</span>
                     </div>
                     <div class="student-card">
-                        <img src="https://placehold.co/120x120/e0e0e0/cccccc?text=Student" alt="Student Photo" class="student-image">
-                        <h3 class="student-name">Peter Jones</h3>
-                        <p class="placement-company">at Amazon</p>
-                         <span class="placement-salary">20 LPA</span>
-                    </div>
-                     <div class="student-card">
-                        <img src="https://placehold.co/120x120/e0e0e0/cccccc?text=Student" alt="Student Photo" class="student-image">
-                        <h3 class="student-name">Mary Williams</h3>
-                        <p class="placement-company">at TCS</p>
+                        <img src="images/placements/adhithya_rmbg.png" alt="Student Photo" class="student-image">
+                        <h3 class="student-name">Adhithya SS</h3>
+                        <p class="placement-company">Infosys</p>
                          <span class="placement-salary">10 LPA</span>
                     </div>
                      <div class="student-card">
-                        <img src="https://placehold.co/120x120/e0e0e0/cccccc?text=Student" alt="Student Photo" class="student-image">
-                        <h3 class="student-name">David Brown</h3>
-                        <p class="placement-company">at Infosys</p>
-                         <span class="placement-salary">9 LPA</span>
+                        <img src="images/placements/anjaly.png" alt="Student Photo" class="student-image">
+                        <h3 class="student-name">Anjaly Babu</h3>
+                        <p class="placement-company">Talrop</p>
+                         <span class="placement-salary">10 LPA</span>
                     </div>
                      <div class="student-card">
-                        <img src="https://placehold.co/120x120/e0e0e0/cccccc?text=Student" alt="Student Photo" class="student-image">
-                        <h3 class="student-name">Susan Davis</h3>
-                        <p class="placement-company">at Wipro</p>
-                         <span class="placement-salary">8.5 LPA</span>
+                        <img src="images/placements/biswas.png" alt="Student Photo" class="student-image">
+                        <h3 class="student-name">Biswas Sekhar</h3>
+                        <p class="placement-company">Talrop</p>
+                         <span class="placement-salary">10 LPA</span>
+                    </div>
+                     <div class="student-card">
+                        <img src="images/placements/vishnu priya.jpg" alt="Student Photo" class="student-image">
+                        <h3 class="student-name">Vishnu Priya Salin</h3>
+                        <p class="placement-company">Talrop</p>
+                         <span class="placement-salary">10 LPA</span>
                     </div>
                 </div>
             </section>
@@ -575,7 +575,7 @@ aminitiesLink.addEventListener('click', function(event) {
                         </ul>
                     </div>
                     <div class="amenity-image-container">
-                        <img src="https://placehold.co/600x400/4f46e5/ffffff?text=Seminar+Hall" alt="Seminar Hall" class="amenity-image">
+                        <img src="images/aminities/seminar-hall.png" alt="Seminar Hall" class="amenity-image">
                     </div>
                 </section>
 
@@ -607,7 +607,7 @@ aminitiesLink.addEventListener('click', function(event) {
                         </ul>
                     </div>
                     <div class="amenity-image-container">
-                        <img src="https://placehold.co/600x400/f59e0b/ffffff?text=ML+Lab" alt="Machine Learning Lab" class="amenity-image">
+                        <img src="images/aminities/ML-lab.png" alt="Machine Learning Lab" class="amenity-image">
                     </div>
                 </section>
 
@@ -623,7 +623,7 @@ aminitiesLink.addEventListener('click', function(event) {
                         </ul>
                     </div>
                     <div class="amenity-image-container">
-                        <img src="https://placehold.co/600x400/ef4444/ffffff?text=Hardware+Lab" alt="Hardware Lab" class="amenity-image">
+                        <img src="images/aminities/hardware-lab.png" alt="Hardware Lab" class="amenity-image">
                     </div>
                 </section>
 
@@ -639,7 +639,7 @@ aminitiesLink.addEventListener('click', function(event) {
                         </ul>
                     </div>
                     <div class="amenity-image-container">
-                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Robotics+Lab" alt="Project & Robotics Lab" class="amenity-image">
+                        <img src="images/aminities/robotics-lab.png" alt="Project & Robotics Lab" class="amenity-image">
                     </div>
                 </section>
 
@@ -671,7 +671,7 @@ aminitiesLink.addEventListener('click', function(event) {
                         </ul>
                     </div>
                     <div class="amenity-image-container">
-                        <img src="https://placehold.co/600x400/6b7280/ffffff?text=Dept.+Library" alt="Department Library" class="amenity-image">
+                        <img src="images/aminities/dept-library.png" alt="Department Library" class="amenity-image">
                     </div>
                 </section>
 
